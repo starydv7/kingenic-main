@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/AeonikTRIAL-Regular\ \(1\).otf') format('opentype');
+    /* Add other font formats if needed */
+    /* Make sure to update the file path accordingly */
+  }
+  .content {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .header {
+      font-size: 42px;
+  }
+
+  .img {
+      display: flex;
+      margin: 0 auto;
+      height: 50vh;
+      width: 80%;
+      margin-top: 20px;
+      border-radius: 5%;
+  }
+
+  .container {
+      margin: 0 auto;
+      width: 100%;
+      height: 100vh;
+      border-color: white;
+      margin-top: -46px;
+      font-family: CustomFont;
+  }
+  .card{
+    width: 100%;
+    height: 400px;
+    top: 20;
+
+  }
+  .card:hover{
+    border-radius: 10px;
+    background-color: rgb(238, 237, 237);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .title {
+      margin-left: 50px;
+      width: 70%;
+      font-size: 30px;
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 25px;
+      margin-top: -20px;
+  }
+
+  .description {
+      margin: 20px auto;
+      width: 80%;
+      font-size: 25px;
+      margin: 20px auto;
+  }
+
+  .next-slick-arrow,
+  .prev-slick-arrow {
+      color: #000000;
+      font-size: 45px;
+      position: absolute;
+      right: 30px;
+      /* Adjust the right position */
+      top: -242px;
+      width: 40px;
+      color: white;
+      height: 40px;
+      border-radius: 20px;
+      cursor: pointer; /* Add cursor style for hover effect */
+      transition: transform 0.2s; /* Add transition for smooth movement */
+      
+      /* Adjust the top position */
+  }
+  .next-slick-arrow:hover{
+    background-color: #9d9d9d;
+    border: 1px solid rgb(237, 9, 9);
+  }
+  .prev-slick-arrow:hover{
+    background-color: #9d9d9d;
+    border: 1px solid rgb(236, 15, 15);
+  }
+
+  .prev-slick-arrow {
+      right: -1080px;
+  }
+
+
+  /* Adjust the position of the slider content */
+  .content {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+      /* Add this line */
+      padding-top: 50px;
+      /* Add some padding at the top to make space for arrows */
+  }
+  .arrow-1,.arrow-2{
+    width: 15px;
+    margin-top: 14px;
+    cursor: pointer; /* Add cursor style for hover effect */
+    transition: transform 0.2s; /* Add transition for smooth movement */
+  }
+  .arrow-1:hover {
+    transform: translateX(5px);
+  }
+  .arrow-2:hover {
+    transform: translateX(-5px);
+  }

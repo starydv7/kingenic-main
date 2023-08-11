@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./fonts/AeonikTRIAL-Regular\ \(1\).otf') format('opentype');
+  /* Add other font formats if needed */
+  /* Make sure to update the file path accordingly */
+}
+body {
+  margin: 0;
+  font-family:CustomFont;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

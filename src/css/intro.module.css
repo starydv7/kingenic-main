@@ -1,0 +1,912 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/AeonikTRIAL-Regular\ \(1\).otf') format('opentype');
+  /* Add other font formats if needed */
+  /* Make sure to update the file path accordingly */
+}
+@font-face {
+  font-family: 'Medium';
+  src: url('../fonts/AeonikTRIAL-Bold.otf') format('opentype');
+  /* Add other font formats if needed */
+  /* Make sure to update the file path accordingly */
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: CustomFont, sans-serif;
+
+}
+
+body,
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+.container{
+  width:100%;
+  height: 0vh;
+  margin-top: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.maindiv {
+  max-width: 100%;
+  /* Adjust the value as per your design */
+  height: 60vh;
+  margin: 0 auto;
+  /* This centers the maindiv horizontally */
+  overflow: hidden;
+  /* Hides the content that overflows */
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+  transition: transform 0.3s;
+  background: linear-gradient(to bottom, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-3));
+  transition: background 0.5s;
+}
+
+.develop-manufacture:hover {
+  transform: translateX(5px);
+  /* Move 5px to the right on hover */
+  transition: transform 0.3s;
+  /* Add transition only for hover */
+}
+
+.grid-item-1 {
+  width: 60%;
+  height: 400px;
+  border: 2px solid red;
+}
+
+.grid-item-2 {
+  border: 2px solid rgb(47, 20, 223);
+  margin-left: -27%;
+  width: 140%;
+  font-size: 88px;
+  height: 400px;
+  font-family: CustomFont;
+}
+
+.transform-text {
+  font-size: 110px;
+  font-family: CustomFont;
+  margin-left: 0%;
+  margin-top: 50px;
+  display: block;
+  block-size: auto;
+
+}
+.transform-text1{
+  font-size: 110px;
+  font-family: CustomFont;
+  margin-left: 0%;
+  margin-top: -130px;
+  display: block;
+  block-size: auto;
+}
+.grid-grid{
+ max-width: 100%;
+  height: 330px;
+  border: 2px solid rgb(11, 224, 43);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+}
+.grid-grid1{
+  width: 50%;
+  height: 300px;
+  border: 2px solid red;
+}
+.grid-grid2{
+  width: 85%;
+  border: 2px solid green;
+  margin-left: -33%;
+  height: 300px;
+  
+}
+.grid-grid3{
+  width: 134%;
+  border: 2px solid blue;
+  margin-left: -31%;
+  height: 300px;
+}
+.grid-grid4{
+  width: 92%;
+  border: 2px solid black;
+  margin-left: 5%;
+  height: 300px;
+}
+.grid-item-3 {
+  width: 60%;
+  border: 2px solid green;
+}
+
+.grid-item-3.active {
+  opacity: 1;
+}
+
+.grid-item-3 ul li {
+  list-style-type: none;
+  position: relative;
+  font-family: CustomFont;
+  transition: transform 0.3s;
+  cursor: pointer;
+  height: 25px;
+  line-height: 1em;
+  opacity: .5;
+  margin-left: 30px;
+  color: black;
+  transition: opacity.5 cubic-bezier(.19, 1, .22, 1);
+
+}
+
+.grid-item-4 {
+  width: 100%;
+  border: 2px solid yellow;
+}
+
+.our-intro {
+  translate: none;
+  rotate: none;
+  scale: none;
+  opacity: 0.8918;
+  transform: translate3d(-1.0824px, 0px, 0px);
+  font-family: CustomFont;
+  font-size: 15px;
+  /* font-size: .9023529412vw; */
+  line-height: 1em;
+  padding-right: 0.625rem;
+  font-weight: 600;
+
+
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.grid-last-img{
+  width: 80%;
+  height: 250px;
+  margin-left: 25%;
+}
+
+.image-1 {
+  width: 85%;
+  height: 90%;
+  margin-left: -14%;
+  transition: transform 0.3s;
+  margin-top: 6%;
+}
+.last-grid{
+  width: 100%;
+  height: 200px;
+  margin-top: 2%;
+  border: 2px slid rgb(23, 24, 23);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+
+}
+.last-grid1{
+  width: 100%;
+  border: 2px solid red;
+  margin-top: -10%;
+}
+.expertise3{
+  width: 70%;
+  height: 70%;
+  margin-left: 20%;
+}
+.expertise4{
+  width: 50%;
+  height: 40%;
+  margin-top: 33%;
+  margin-left: 50%;
+}
+.last-grid2{
+  width: 100%;
+  border: 2px solid rgb(220, 23, 230);
+}
+.last-grid3{
+  width: 100%;
+  border: 2px solid rgb(86, 18, 232);
+}
+.last-grid4{
+  width: 100%;
+  border: 2px solid rgb(0, 255, 30);
+}
+.second-row {
+  display: flex;
+}
+
+.image-baby {
+  width: 28%;
+  height: 38%;
+  transition: transform 0.3s;
+}
+
+.image-baby:hover {
+  transform: translateX(3px);
+}
+
+.grid-item ul {
+  list-style-type: none;
+  position: relative;
+}
+
+/* .grid-item ul li {
+  margin-left: 10em;
+ 
+  line-height: 2em;
+  font-family: CustomFont;
+  transition: transform 0.3s;
+  position: sticky;
+  top: 0;
+ 
+  z-index: 100;
+} */
+
+.grid-item ul li:hover {
+  transform: translateX(5px);
+  /* Move 5px to the right on hover */
+  transition: transform 0.3s;
+  /* Add transition only for hover */
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background-color: #007bff;
+  /* You can change the color as per your preference */
+  z-index: 9999;
+}
+
+.intro {
+  display: flex;
+  font-family: Custom;
+
+
+}
+.horizontal-line {
+  border-top: 1.4px solid #000;
+  /* Adjust the color and style of the line as needed */
+  width: 160px;
+  position: relative;
+  /* Adjust the width of the line as needed */
+  margin: 0 auto;
+  margin-top: 7.5%;
+  margin-left: 5px
+}
+
+.horizontal-line-1 {
+  border-top: 1.4px solid #000;
+  /* Adjust the color and style of the line as needed */
+  width: 220px;
+  position: relative;
+  /* Adjust the width of the line as needed */
+  margin: 0 auto;
+  margin-top: 5.5%;
+  margin-left: 5px
+}
+
+.intro-detail {
+  font-family: Custom;
+  opacity: 0.8918;
+  color: black;
+  line-height: 2rem;
+  font-size: 16.4px;
+  font-size: 1.225rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.grid-item-5 {
+  width: 135%;
+  margin-left: -130%;
+  border: 2px solid green;
+
+}
+
+.number-text {
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-family: CustomFont;
+  font-size: 22px;
+  font-size: 1.2941176471vw;
+  justify-content: space-between;
+  position: relative;
+  font-weight:600;
+}
+
+.content-text {
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Inter',sans-serif;
+  font-size: 22px;
+  font-size: 1.3941176471vw;
+  justify-content: space-between;
+  position: relative;
+  line-height: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 0.89;
+  font-weight: 600;
+}
+
+.develop-manufacture {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  gap: 30px;
+  position: relative;
+  font-family: Custom;
+  transition: transform 0.3s;
+}
+
+.develop-manufacture:hover {
+  transform: translateX(5px);
+}
+
+.arrow-span-1 {
+  margin-left: 11rem;
+  margin-top: 1%;
+}
+
+.arrow-span-2 {
+  margin-left: 8.34rem;
+  margin-top: 1%;
+}
+
+.arrow-span-3 {
+  margin-left: 5.56rem;
+  margin-top: 1%;
+}
+
+.arrow-span-4 {
+  margin-left: 3.27rem;
+  margin-top: 1%;
+}
+
+.arrow-span-5 {
+  margin-left: 1.2rem;
+  margin-top: 1%;
+}
+
+.image-2 {
+  width: 30px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.image-3 {
+  width: 70%;
+  height: 80%;
+  padding: 10px;
+  margin-left: 25%;
+  transition: transform 0.3s;
+}
+.grid-item-6{
+  width: 10%;
+  width: 2px solid red;
+}
+
+.about-us {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: rgb(161, 195, 209);
+  margin-top: 15%;
+  margin-left: 10px;
+  display: flex;
+  gap: 25px;
+  font-family: CustomFont;
+}
+
+.about-arrow {
+  width: 40px;
+  height: 20px;
+  margin-top: 30%;
+  margin-left: 30%;
+  transition: transform 0.3s;
+
+}
+
+.about-arrow:hover {
+  transform: translateX(5px);
+}
+
+.about-text {
+  width: 150px;
+  border: 3px solid blue;
+  font-size: 1.5rem;
+  font-family: Regular;
+  transition: transform 0.3s;
+
+}
+
+.about-text:hover {
+  transform: translateX(5px);
+}
+
+.image-3:hover {
+  transform: translateX(5px);
+}
+
+.image-1:hover {
+  transform: translateX(5px);
+}
+
+.about-text-div {
+  margin-top: -14px;
+  margin-left: -10px;
+}
+
+.image-women {
+  width: 35%;
+  height: 90%;
+  margin-left: 53%;
+  margin-top: -10%;
+  transition: transform 0.3s;
+}
+
+.image-women:hover {
+  transform: translateX(5px);
+}
+
+.third-row-2 {
+  display: flex;
+}
+
+
+/* ===============================================
+MEDIAQUERIES */
+/* intro.module.css */
+
+/* Existing styles */
+
+/* Media query for screen width 320px to 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .maindiv {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    transition: transform 0.3s;
+
+  }
+
+  .develop-manufacture {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    gap: 10px;
+    position: relative;
+    font-family: Customfont;
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+  }
+
+  .develop-manufacture:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s;
+  }
+
+  .arrow-span-1 {
+    margin-left: 11rem;
+    margin-top: 1%;
+  }
+
+  .arrow-span-2 {
+    margin-left: 8.45rem;
+    margin-top: 1%;
+  }
+
+  .arrow-span-3 {
+    margin-left: 6rem;
+    margin-top: 1%;
+  }
+
+  .arrow-span-4 {
+    margin-left: 4rem;
+    margin-top: 1%;
+  }
+
+  .arrow-span-5 {
+    margin-left: 2.5rem;
+    margin-top: 1%;
+  }
+
+  .horizontal-line {
+    display: none;
+  }
+
+  .intro-detail {
+    font-family: Custom;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  .grid-item ul {
+    display: none;
+  }
+
+  .image-3 {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    margin-left: 5%;
+    transition: transform 0.3s;
+
+  }
+
+  .image-women {
+    display: none;
+  }
+
+  .about-us {
+    align-items: center;
+    margin-left: 18%;
+  }
+
+  .about-text {
+    margin-top: 40px;
+    margin-left: -10px;
+    width: 150px;
+    border: 3px solid blue;
+    font-size: 1rem;
+    font-family: Regular;
+    transition: transform 0.3s;
+
+    /* Add these properties to make the text wrap */
+    white-space: normal;
+    /* Allow line breaks */
+    word-wrap: break-word;
+  }
+
+  .about-us {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: rgb(161, 195, 209);
+    margin-top: 1%;
+    font-family: Customfont;
+    display: flex;
+    gap: 40px;
+    margin-left: 50px;
+  }
+
+  .about-arrow {
+    width: 60px;
+    height: 40px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+
+  }
+
+  .about-arrow:hover {
+    transform: translateX(5px);
+  }
+
+  .about-text {
+    width: 150px;
+    border: 3px solid blue;
+    font-size: 1.5rem;
+    font-family: Regular;
+    transition: transform 0.3s;
+
+  }
+
+  .about-text:hover {
+    transform: translateX(5px);
+  }
+
+  .image-3:hover {
+    transform: translateX(5px);
+  }
+
+  .image-1:hover {
+    transform: translateX(5px);
+  }
+
+  .about-text-div {
+    top: 50%;
+    /* Start from vertical center of the page */
+    left: 50%;
+    /* Start from horizontal center of the page */
+    transform: translate(-50%, -50%);
+    /* Adjust to center the element */
+    margin-left: 100%;
+    /* Initial horizontal offset */
+    margin-top: 80px;
+    font-size: 1rem;
+    font-family: CustomFont;
+    transition: transform 0.3s;
+  }
+
+  .about-us {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: rgb(161, 195, 209);
+    margin-top: 1%;
+    font-family: Customfont;
+    display: flex;
+    gap: 40px;
+    margin-left: 50px;
+    top: 50%;
+    /* Start from vertical center of the page */
+    left: 50%;
+    /* Start from horizontal center of the page */
+    transform: translate(-50%, -50%);
+    /* Adjust to center the element */
+    margin-left: 35%;
+    /* Initial horizontal offset */
+    margin-top: 45px;
+    font-size: 1rem;
+    font-family: CustomFont;
+    transition: transform 0.3s;
+  }
+
+  .arrow-span-1,
+  .arrow-span-2,
+  .arrow-span-3,
+  .arrow-span-4,
+  .arrow-span-5 {
+    margin-left: auto;
+    /* Move the arrows to the right edge of the box */
+  }
+
+}
+
+@media (min-width: 480px) {
+
+  .arrow-span-1,
+  .arrow-span-2,
+  .arrow-span-3,
+  .arrow-span-4,
+  .arrow-span-5 {
+    margin-left: auto;
+    /* Move the arrows to the right edge of the box */
+  }
+}
+
+
+/* Media query for screen width 481px to 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .maindiv {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    transition: transform 0.3s;
+
+  }
+
+  .develop-manufacture {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    gap: 10px;
+    position: relative;
+    font-family: Customfont;
+    font-size: 1rem;
+    transition: transform 0.3s;
+  }
+
+  .develop-manufacture:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s;
+  }
+
+  .arrow-span-1 {
+    margin-left: calc(12.1rem + 10%);
+    /* margin-left: 50%; */
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 1%;
+  }
+
+  .arrow-span-2 {
+    margin-left: 40%;
+    margin-top: 1%;
+  }
+
+  .arrow-span-3 {
+    margin-left: 30%;
+    margin-top: 1%;
+  }
+
+  .arrow-span-4 {
+    margin-left: 21%;
+    margin-top: 1%;
+  }
+
+  .arrow-span-5 {
+    margin-left: 14.5%;
+    margin-top: 1%;
+  }
+
+  .arrow-span-1,
+  .arrow-span-2,
+  .arrow-span-3,
+  .arrow-span-4,
+  .arrow-span-5 {
+    margin-left: auto;
+    /* Move the arrows to the right edge of the box */
+  }
+
+
+  .horizontal-line {
+    display: none;
+  }
+
+  .intro-detail {
+    font-family: Custom;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  .grid-item ul {
+    display: none;
+  }
+
+  .image-3 {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    margin-left: 5%;
+    transition: transform 0.3s;
+
+  }
+
+  .image-women {
+    display: none;
+  }
+
+  .about-us {
+    align-items: center;
+    margin-top: -20px;
+  }
+
+  .about-text {
+    margin-top: 40px;
+    margin-left: -10px;
+    width: 150px;
+    border: 3px solid blue;
+    font-size: 1rem;
+    font-family: CumstomFont;
+    transition: transform 0.3s;
+
+    /* Add these properties to make the text wrap */
+    white-space: normal;
+    /* Allow line breaks */
+    word-wrap: break-word;
+  }
+
+  .about-us {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: rgb(161, 195, 209);
+    margin-top: 1%;
+    font-family: Customfont;
+    display: flex;
+    gap: 40px;
+    margin-left: 50px;
+    top: 50%;
+    /* Start from vertical center of the page */
+    left: 50%;
+    /* Start from horizontal center of the page */
+    transform: translate(-50%, -50%);
+    /* Adjust to center the element */
+    margin-left: 35%;
+    /* Initial horizontal offset */
+    margin-top: 80px;
+    font-size: 1rem;
+    font-family: CustomFont;
+    transition: transform 0.3s;
+  }
+
+  .about-arrow {
+    width: 60px;
+    height: 40px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+
+
+  }
+
+  .about-arrow:hover {
+    transform: translateX(5px);
+  }
+
+  .about-text {
+    width: 150px;
+    border: 3px solid blue;
+    font-size: 1.5rem;
+    font-family: Regular;
+    transition: transform 0.3s;
+
+  }
+
+  .about-text:hover {
+    transform: translateX(5px);
+  }
+
+  .image-3:hover {
+    transform: translateX(5px);
+  }
+
+  .image-1:hover {
+    transform: translateX(5px);
+  }
+
+  .about-text-div {
+    top: 50%;
+    /* Start from vertical center of the page */
+    left: 50%;
+    /* Start from horizontal center of the page */
+    transform: translate(-50%, -50%);
+    /* Adjust to center the element */
+    margin-left: 60px;
+    /* Initial horizontal offset */
+    margin-top: 80px;
+    font-size: 1rem;
+    font-family: CustomFont;
+    transition: transform 0.3s;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .arrow-span-1,
+  .arrow-span-2,
+  .arrow-span-3,
+  .arrow-span-4,
+  .arrow-span-5 {
+    margin-left: auto;
+    /* Move the arrows to the right edge of the box */
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {}

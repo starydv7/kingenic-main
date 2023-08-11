@@ -1,0 +1,64 @@
+/* ProgressBar.css */
+
+.progress-container {
+    width: 70rem;
+    height: 1px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    margin-top: 10%;
+    margin-left: -10%;
+    padding:0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #84a5c0;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+   
+    .progress-container {
+      display: none;
+      }
+      
+      .progress-bar {
+        display: none
+      }
+    /* Add any other styles specific to this screen range as needed */
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles to apply to elements within this screen range */
+   
+    .progress-container {
+        display: none;
+        }
+        
+        .progress-bar {
+          display: none
+        }
+    /* Add any other styles specific to this screen range as needed */
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Styles to apply to elements within this screen range */
+    .progress-container {
+        width: 40rem;
+        height: 2px;
+        background-color: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0;
+        padding:0;
+      }
+      
+      .progress-bar {
+        height: 100%;
+        background-color: #84a5c0;
+        border-radius: 10px;
+      }
+  
+  
+    /* Add any other styles specific to this screen range as needed */
+  }
+  

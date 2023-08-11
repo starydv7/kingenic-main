@@ -1,0 +1,535 @@
+/* home.module.css */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/AeonikTRIAL-Light.otf') format('opentype');
+  /* Add other font formats if needed */
+  /* Make sure to update the file path accordingly */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'CustomFont';
+}
+
+.maindiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  perspective: 1000px;
+}
+
+.text-container {
+  margin-left: 5%;
+  transition: transform 0.03 ease-in-out;
+}
+
+.text-container:hover {
+  transform: translateZ(5px);
+}
+
+h2,.text-container-2 {
+  font-family: 'CustomFont';
+  line-height: 1em;
+  letter-spacing: -.01em;
+  font-weight: 100;
+  color: rgb(24, 24, 24);
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+h2 {
+  font-size: 1em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: CustomFont;
+}
+
+.text-container-2 {
+  font-size: 1.2em;
+  color: rgb(132, 109, 109);
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: -5%;
+}
+
+h2:hover,
+.text-container-2:hover {
+  transform: translateZ(1.8rem);
+}
+
+
+.down-arrow-container {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(214, 179, 216);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70px;
+  /* Adjust the distance from the bottom */
+  left: 140px;
+  /* Adjust the distance from the left */
+  background-color: transparent;
+  /* Set the background to transparent */
+}
+.down-arrow-container:hover{
+  background-color: #4c7ba1;
+  border: 3px solid white;
+}
+.down-arrow-container svg:hover{
+  color: #f2f2f2;
+}
+
+/* Customize the arrow icon size and color */
+.down-arrow-container svg {
+  width: 30px;
+  /* Adjust the width */
+  height: auto;
+  /* Keeps the aspect ratio */
+  color: #cc1010;
+  margin-bottom: -50px;
+  margin-left: 35px;
+  /* Change the arrow color to your preferred color */
+}
+
+/* Add some animation to the arrow for better user experience */
+.down-arrow-container svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.down-arrow-container svg:hover {
+  transform: translateY(5px);
+  /* Adjust the amount of upward translation on hover */
+}
+
+h2:hover {
+  transform: translateZ(5px);
+}
+.press-release{
+  width:60.5rem ;
+  height: 45px;
+  background-color: #4c7ba1;
+  opacity: 0.1;
+  border-radius: 20px;
+  
+}
+.press-release:hover{
+  background-color: white;
+  color: white;
+ 
+}
+
+.press{
+  position: absolute;
+  top: 59%;
+  left: 200%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f2f2;
+  padding: 5px;
+  height: 10px;
+  width: 120%;
+
+  border-radius: 20px;
+  text-align: center;
+}
+.press:hover{
+  background-color: black;
+  color: white;
+}
+.press-span:hover{
+  background-color: black;
+  color: white;
+}
+.progressBar{
+  margin-left: 120%;
+  margin-top: 10%;
+}
+.press-span{
+  margin-top: -6px;
+  font-family: 'CustomFont', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.pawan{
+  margin-top: -28%;
+  margin-left: 15rem;
+}
+.pawan:hover{
+  color: black;
+  font-weight:bold;
+  font-size: 13px;
+}
+
+
+
+
+
+
+/* @media screen and (max-width:720px) {
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-container-2 {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+} */
+
+
+/* Media Query for Tablets and Small Desktops */
+/* @media screen and (min-width: 728px) {
+  h2 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-container-2 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+ 
+} */
+
+/* Media Query for Large Desktops */
+/* Add these styles to your CSS file (e.g., home.module.css) */
+
+/* ... (previous styles) ... */
+
+/* Media Query for screens between 730px and 1200px */
+/*  */
+
+/* Add these styles to your CSS file (e.g., home.module.css) */
+
+/* ... (previous styles) ... */
+
+/* Media Query for screens between 320px and 730px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles to apply to elements within this screen range */
+ 
+  .down-arrow-container {
+    /* Adjust the container width and height for this screen range */
+    width: 60px;
+    height: 60px;
+    /* Adjust the distance from the bottom and left for this screen range */
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .down-arrow-container svg {
+    /* Adjust the width and margin for this screen range */
+    width: 20px;
+    margin-bottom: -20px;
+    margin-left: 20px;
+  }
+
+  .down-arrow-container:hover {
+    /* Any additional styles for the hover state in this screen range */
+    background-color: #4c7ba1;
+    border: 3px solid white;
+  }
+
+  .down-arrow-container svg:hover {
+    /* Any additional styles for the hover state of the arrow icon in this screen range */
+    color: #f2f2f2;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  .text-container-2{
+    font-size: 1rem;
+  }
+  .progressBar{
+    display: none;
+  }
+  .press-release {
+    /* Adjust the width and height for this screen range */
+    display: none;
+  }
+
+
+  
+
+
+  /* Add any other styles specific to this screen range as needed */
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles to apply to elements within this screen range */
+ 
+  .down-arrow-container {
+    /* Adjust the container width and height for this screen range */
+    width: 70px;
+    height: 70px;
+    /* Adjust the distance from the bottom and left for this screen range */
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateZ(10%);
+  }
+
+  .down-arrow-container svg {
+    /* Adjust the width and margin for this screen range */
+    width: 20px;
+    margin-bottom: -28px;
+    margin-left: 25px;
+  }
+
+  .down-arrow-container:hover {
+    /* Any additional styles for the hover state in this screen range */
+    background-color: #4c7ba1;
+    border: 3px solid white;
+  }
+
+  .down-arrow-container svg:hover {
+    /* Any additional styles for the hover state of the arrow icon in this screen range */
+    color: #f2f2f2;
+  }
+  h2 {
+    font-size: calc(2.5rem + 1.5vw); /* Adjust the base size and multiplier as needed */
+  }
+
+  .text-container-2 {
+    font-size: calc(1.2rem + 0.50vw); /* Adjust the base size and multiplier as needed */
+  }
+  .maindiv {
+    min-height: 100vh;
+    /* Set the minimum height to cover the whole viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    perspective: 1000px;
+    /* Set the perspective for 3D space */
+  
+    /* Add any other styles for your maindiv here */
+  }
+  .progressBar{
+    display: none;
+  }
+  .press-release {
+    /* Adjust the width and height for this screen range */
+    display: none;
+  }
+
+  /* Add any other styles specific to this screen range as needed */
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles to apply to elements within this screen range */
+ 
+  .down-arrow-container {
+    /* Adjust the container width and height for this screen range */
+    width: 90px;
+    height: 90px;
+    /* Adjust the distance from the bottom and left for this screen range */
+    bottom: 20%;
+    
+  }
+  .down-arrow-container {
+    /* Adjust the container width and height for this screen range */
+    width: 90px;
+    height: 90px;
+    /* Adjust the distance from the bottom and left for this screen range */
+    bottom: 10%;
+    left: 15%;
+    transform: translateX(-5%);
+    transform: translateZ(10%);
+  }
+
+  .down-arrow-container svg {
+    /* Adjust the width and margin for this screen range */
+    width: 40px;
+    margin-left: 25px;
+  }
+
+  .down-arrow-container:hover {
+    /* Any additional styles for the hover state in this screen range */
+    background-color: #4c7ba1;
+    border: 3px solid white;
+  }
+
+  .down-arrow-container svg:hover {
+    /* Any additional styles for the hover state of the arrow icon in this screen range */
+    color: #f2f2f2;
+  }
+
+  h2 {
+    /* Adjust the font-size for this screen range */
+    font-size: 4rem;
+  }
+
+  .text-container-2 {
+    /* Adjust the font-size for this screen range */
+    font-size: 1.25rem;
+  }
+  .maindiv {
+    min-height: 100vh;
+    /* Set the minimum height to cover the whole viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    perspective: 1000px;
+    /* Set the perspective for 3D space */
+  
+    /* Add any other styles for your maindiv here */
+  }
+  .press-release{
+    width: 50%;
+  }
+
+  /* Add any other styles specific to this screen range as needed */
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Styles to apply to elements within this screen range */
+ 
+  .down-arrow-container {
+    /* Adjust the container width and height for this screen range */
+    width: 120px;
+    height: 120px;
+    /* Adjust the distance from the bottom and left for this screen range */
+    bottom: 80px;
+    left: 10%;
+    transform: translateX(-2%);
+  }
+
+  .down-arrow-container svg {
+    /* Adjust the width and margin for this screen range */
+    width: 50px;
+    margin-left: 35px;
+    margin-bottom: -70px;
+  }
+
+  .down-arrow-container:hover {
+    /* Any additional styles for the hover state in this screen range */
+    background-color: #4c7ba1;
+    border: 3px solid white;
+  }
+
+  .down-arrow-container svg:hover {
+    /* Any additional styles for the hover state of the arrow icon in this screen range */
+    color: #f2f2f2;
+  }
+
+  h2 {
+    /* Adjust the font-size for this screen range */
+    font-size: 3rem;
+  }
+
+  .text-container-2 {
+    /* Adjust the font-size for this screen range */
+    font-size: 1.7rem;
+    
+  }
+  .maindiv {
+    min-height: 100vh;
+    /* Set the minimum height to cover the whole viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    perspective: 1000px;
+    /* Set the perspective for 3D space */
+  
+    /* Add any other styles for your maindiv here */
+  }
+  .press-release{
+    width:40.5rem ;
+    height: 35px;
+    background-color: #4c7ba1;
+    opacity: 0.3;
+    border-radius: 20px;
+  }
+
+  /* Add any other styles specific to this screen range as needed */
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+  /* Styles to apply to elements within this screen range */
+ 
+  .down-arrow-container {
+    /* Adjust the container width and height for this screen range */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    /* Adjust the distance from the bottom and left for this screen range */
+    bottom: 2%;
+    left: 5%;
+    transform: translateX(-2%);
+  }
+
+  .down-arrow-container svg {
+    /* Adjust the width and margin for this screen range */
+    width: 40px;
+    margin-left: 30px;
+    margin-bottom: -60px;
+  }
+
+  .down-arrow-container:hover {
+    /* Any additional styles for the hover state in this screen range */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4c7ba1;
+    border-radius: 50%;
+    position:absolute;
+    border: 3px solid white;
+  }
+
+  .down-arrow-container svg:hover {
+    /* Any additional styles for the hover state of the arrow icon in this screen range */
+    color: #f2f2f2;
+  }
+
+  h2 {
+    /* Adjust the font-size for this screen range */
+    font-size: 7rem;
+  }
+
+  .text-container-2 {
+    /* Adjust the font-size for this screen range */
+    font-size: 2.5rem;
+    
+  }
+  .maindiv {
+    min-height: 100vh;
+    /* Set the minimum height to cover the whole viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    perspective: 1000px;
+    /* Set the perspective for 3D space */
+  
+    /* Add any other styles for your maindiv here */
+  }
+  .press-release{
+    width:60.5rem ;
+    height: 35px;
+    background-color: #4c7ba1;
+    opacity: 0.3;
+    border-radius: 20px; 
+  } 
+}
+
+/* Progressbar */
+

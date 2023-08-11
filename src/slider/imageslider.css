@@ -1,0 +1,114 @@
+/* imageslider.css */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #0B1013;
+  }
+  
+  /* Slider Container */
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider ul {
+    display: flex;
+    transition: left 0.4s;
+  }
+  
+  .slider li {
+    flex: 0 0 auto;
+    width: 25%; /* 4 slides visible */
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #8D742A;
+    color: #8D742A;
+    font-size: 18px;
+    background-color: #1A1A1A;
+  }
+  
+  /* Arrow Controls */
+  .arrowControls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .arrowControls button {
+    background-color: #F6C555;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Active Slide Indicator */
+  .sliderControl {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .sliderControl a {
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    background-color: #333;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .sliderControl a.active {
+    background-color: #F6C555;
+  }
+  
+  /* Timer Styles */
+  .timer {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #222;
+    background-color: #222;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  
+  .percentage0,
+  .percentage1,
+  .percentage2,
+  .percentage3,
+  .percentage4 {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  
+  /* Animation for Timer */
+  .gogo {
+    animation: tick-tock 5s steps(5, end) infinite;
+  }
+  
+  @keyframes tick-tock {
+    to {
+      transform: translateY(-115px);
+    }
+  }
+  

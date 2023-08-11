@@ -1,0 +1,200 @@
+/* InfiniteCardSlider.css */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Wrapper styles */
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  width: 110%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Arrow buttons styles */
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); */
+  transition: transform 0.1s linear;
+}
+
+/* .number-1{
+  margin-right: 100px;
+  margin-top: -10px;
+} */
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+  left: -22px;
+}
+
+.wrapper i:last-child {
+  right: -22px;
+}
+
+/* Carousel styles */
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 25px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: transparent;
+}
+
+
+/* Hide scrollbar */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Disable transition for specific cases */
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+/* Dragging styles */
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+/* Card styles */
+.carousel .card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background: rgb(238, 236, 236);
+  opacity: 1;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.carousel .card:hover{
+  background: rgb(236, 234, 234);
+  .numbers{
+    background: rgb(72, 72, 72);
+
+    color: white;
+    
+  }
+ 
+  
+}
+.carousel .card:hover .numbers .number-1 {
+  color: white;
+}
+
+.carousel .card .img {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 148px;
+  width: 148px;
+  
+}
+.carouse .card .img:hover{
+
+}
+
+.carousel .card .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  
+}
+
+.carousel .card h2 {
+  margin: 15px 0 5px;
+  font-size: 1.56rem;
+  font-weight: 500;
+}
+
+.carousel .card span {
+  font-size: 1.31rem;
+  color: #6A6D78;
+}
+.carousel .card .numbers .number-1{
+  margin-left: 5px;
+  margin-top: 8px;
+color: rgb(18, 18, 18);
+}
+#right{
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border: 3px solid red;
+}
+#left{
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border: 3px solid red;
+}
+.numbers{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(21, 20, 20);
+  border-radius: 50px;
+  margin-left: -270px;
+  margin-top: -80px;
+}
+.loop-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #5708f7; /* Adjust color as needed */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wrapper.looped .loop-indicator {
+  opacity: 1; /* Show loop indicator when looped class is added */
+}
+
